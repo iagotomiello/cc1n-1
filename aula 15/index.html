@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+#divsimples{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.divtratada{
+    display: inline-block;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    .Q2{ border: 1px black;}
+}
+
+div:hover{
+    background-color: red;
+    font-weight: bolder;
+
+}
+
+.divtratada:hover > p {
+    background-color: blue;
+
+}
+
+</style>
+   
+    
+</head>
+<body>
+
+<div id="divsimples">Q1</div>
+
+<div class="divtratada"> 
+    <div class="divsimples">Q2</div>
+    
+</div>
+
+<div class="divtratada">
+    <p>Q3</p>
+</div>
+
+<div id="divsimples">Q1</div>
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="-webkit-box-align: center; color: red;">Neque quo voluptates dolore</span>. <span style>Perspiciatis ipsum minus aliquam recusandae distinctio dignissimos natus eaque sint</span>, error vitae iusto blanditiis ad suscipit odio optio!
