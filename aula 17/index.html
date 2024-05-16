@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 17</title>
+
+    <style>
+        *{
+            margin: 1px;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 240px;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div><h1>Formulario de Contato</h1></div>
+
+    <section>
+        <form action="mailto:iagotomiello05@gmail.com" method="post">
+
+        <span>Nome:</span>
+        <input type="text" id="nome"> 
+        <br>
+        <span>Email:</span>
+        <input type="text" id="email" required>
+        <br>
+        <span>Data de Nascimento:</span>
+        <input type="date">
+        <br>
+        <span>Visita ao site:</span>
+        <input type="datetime-local">
+        <br>
+        <span>Senha:</span>
+        <input type="text" id="Password">
+        <br>
+        <span>Contato:</span>
+        <input type="radio" name="contato" id="sim" value="Sim"> sim
+        <input type="radio" name="contato" id="nao" value="Nao"> Nao
+        <br>
+        <span>Assunto:</span>
+        <input type="checkbox" name="auto" id="Auto"> Automóvel
+        <input type="checkbox" name="negocio" id="negocio"> Negocios
+        <input type="checkbox" name="auto" id="finança"> Finanças
+        <input type="checkbox" name="auto" id="tecnologia"> Tecnologia
+        <input type="checkbox" name="auto" id="Esporte"> Esportes
+        <br>
+        <span>Local:</span>
+        <select name="local" id="local" size="1">
+        <option value="">Selecione</option>
+        <optgroup label="GrandeVitoria">Grande Vitoria</optgroup>
+        <option value="Vitoria">Vitoria</option>
+        <option value="Serra">Serra</option>
+        <option value="Cariacica">Cariacica</option>
+        <option value="VilaVelha">Vila Velha</option>
+        <optgroup label="Regiao Serrana"></optgroup>
+        <option value="DM">Domingos Martins</option>
+        <option value="VH">Vitor Hugo</option>
+        <option value="PA">Pedra Azul</option>
+        <select name="" id=""></select>
+        <br>
+        
+        
+        </section>
+        <br>
+        <span>Comentarios:
+        <textarea name="comentario" id="comentarios" cols="50" rows="10"></textarea>
+        </span>
+        <br>
+        <input type="submit" name="enviar" id="Enviar">
+        <input type="reset" name="Limpar">
+       
+        
+
+    </section>
+</form>
+    
+</body>
+</html>
