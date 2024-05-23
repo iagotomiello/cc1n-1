@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 19</title>
+
+</head>
+<body>
+
+    <script>
+        document.write("ola mundo")
+    </script>
+
+    <h1>JavaScript</h1>
+
+    <hr>
+
+    <div id="resposta">
+        <span> window.alert("Alerta do meu ola mundo")</span>
+        <span> window.confirm("você está gostando da pagina?")</span>
+        var botaoresposta = window.prompt("digite o seu nome:")
+        document.writeln("<br>" + botaoresposta)
+
+    </div>
+<br>
+    <div style="border-style: 3px solid;">
+        <input id="usuario" type="text" size="60">
+        <button onclick="validarUsuario()">validar</button>
+
+
+
+    </div>
+
+<br>
+
+    <script>
+
+        function validarUsuario() {
+            var nomeUsuario = "";
+
+            nomeUsuario = document.getElementById("usuario").value;
+
+            window.alert("foi digitado" + usuario)
+
+
+        }
+
+
+        document.write("ola mundo, segunda vez")
+        document.getElementById("resposta").innerHTML = "ola mundo usando <strong> getElementById </strong> "
+
+
+    </script>
+    
+
+
+
+
+
+
+    
+</body>
+</html>
