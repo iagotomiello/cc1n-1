@@ -4,61 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aula 19</title>
-
 </head>
 <body>
+    
+    <main>
+        <section>
+            <h1>Contato</h1>
+            <div>
+                <span>login</span>
+                <input type="user">
+                <span>senha</span>
+                <input type="password">
+                <button onclick="ValidarUsuario()">Entrar</button>
+            </div>
+        </section>
+    </main>
+
 
     <script>
-        document.write("ola mundo")
-    </script>
+        const adm = iago
+        const psw = 12345
 
-    <h1>JavaScript</h1>
-
-    <hr>
-
-    <div id="resposta">
-        <span> window.alert("Alerta do meu ola mundo")</span>
-        <span> window.confirm("você está gostando da pagina?")</span>
-        var botaoresposta = window.prompt("digite o seu nome:")
-        document.writeln("<br>" + botaoresposta)
-
-    </div>
-<br>
-    <div style="border-style: 3px solid;">
-        <input id="usuario" type="text" size="60">
-        <button onclick="validarUsuario()">validar</button>
-
-
-
-    </div>
-
-<br>
-
-    <script>
-
-        function validarUsuario() {
-            var nomeUsuario = "";
-
-            nomeUsuario = document.getElementById("usuario").value;
-
-            window.alert("foi digitado" + usuario)
-
-
+        function ValidarUsuario() {
+            var login = document.getElementById("usuario").value;
+            var senha = document.getElementById("pass").value;
+            if (login == adm && senha == psw) {
+                window.alert("é o adm");
+            } else {window.alert("é o adm")
         }
-
-
-        document.write("ola mundo, segunda vez")
-        document.getElementById("resposta").innerHTML = "ola mundo usando <strong> getElementById </strong> "
-
+    }
 
     </script>
-    
 
 
 
 
 
 
-    
+
+
+
+
+
 </body>
 </html>
